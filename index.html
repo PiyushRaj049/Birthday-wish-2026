@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Happy Birthday, Navya! ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+  <div id="prog"></div>
+  <canvas id="fx"></canvas>
+  <div id="hearts"></div>
+
+  <main>
+    <!-- 1. HERO -->
+    <section id="hero" class="sec s1">
+      <h1 class="rv">Hey Navya! Something Special Is Waiting For You ❤️</h1>
+      <p class="rv">Today is all about you. Let’s make this day special!</p>
+      <div class="env" id="env">
+        <div class="flap"></div>
+        <div class="letter">🎂</div>
+        <div class="pocket"></div>
+      </div>
+      <h2 id="hbd" class="hbd">Happy Birthday, Navya! 🎂</h2>
+      <button class="btn mag" id="openBtn">Open Your Surprise ❤️</button>
+      <div class="hint">Scroll Down to Discover More ↓</div>
+    </section>
+
+    <!-- 2. MESSAGE -->
+    <section id="message" class="sec s2">
+      <div class="glass rv">
+        <p id="msg">Happy Birthday, Navya! ❤️
+
+          You know, even when we first became friends during our Class 10 exam days, everything about our friendship was
+          new to me. I still remember those nights when we used to chat about the most random and useless things while
+          our exams were going on. 😂
+
+          The funny thing is, before you, I was never really into chatting with girls. You were the first girl I ever
+          talked to like that, and my first female friend. You had experience with all this, but for me, it was
+          completely new.
+
+          Honestly, I never thought we would actually become friends. I've probably told you this a thousand times, but
+          even when I was in Kota, I still couldn't believe that we had become such good friends. And somehow, that
+          friendship continued for another years.
+
+          I guess some of the best people in life come into our lives randomly, when we least expect them. We don't plan
+          to meet them or become close to them; it just happens.
+
+          When we finally met this year, I genuinely enjoyed that day. Even though I had lost contact with you last year
+          because of my IIT preparation (which, by the way, didn't exactly go as planned 😭), you were still the same
+          person when I called you on Diwali last year. I didn't feel any difference in the way we talked. And when we
+          met again in August this year, it didn't even feel like we were meeting after such a long time. It felt so
+          natural.
+
+          The place might not have been that great, but the experience was definitely unforgettable. ❤️
+
+          I genuinely hope we get to travel together more often. Hopefully, your mummy allows you to go on more trips.
+          😂 I really wish we could travel across India, explore different places, make random plans, click lots of
+          pictures and collect countless memories together.
+
+          I don't know whether all of this will actually happen or not, but I really hope it does. And if it does, I'm
+          sure we'll have a lot of stories to laugh about later.
+
+          And honestly, I've never really been someone who strongly believes in friendship just for the sake of it. I
+          believe that only genuine friendships stand the test of time. Let's see how far ours goes.
+
+          They say that with time, everything changes and even the closest connections can slowly fade away. I don't
+          know what the future holds for us, but let's see how long we can keep this friendship going. I just hope that
+          even as time passes and life gets busy, we never become complete strangers again. ❤️
+
+          **Some friendships are planned, but some just happen unexpectedly, and somehow, those become the most
+          memorable ones. ❤️**
+
+        </p>
+      </div>
+    </section>
+
+    <!-- 3. SOLO GALLERY (filled from script.js) -->
+    <section id="solo" class="sec s3">
+      <h2 class="title rv">A Little Gallery of You ❤️</h2>
+      <div class="masonry" id="soloGrid"></div>
+    </section>
+
+    <!-- 4. LAST YEAR'S WISH -->
+    <section id="wish" class="sec s4">
+      <h2 class="title rv">A Memory From Last Year ❤️</h2>
+      <div class="frame rv" id="wishFrame"></div>
+      <p class="cap rv">Last year, another birthday wish. This year, another reason to remind you how special you are.
+        Time flies, but some friendships never change. ❤️</p>
+    </section>
+
+    <!-- 5. MEMORIES -->
+    <section id="memories" class="sec s5">
+      <h2 class="title rv">Little Moments Worth Remembering 💗</h2>
+      <div class="strip" id="memGrid"></div>
+    </section>
+
+    <!-- 6. REASONS -->
+    <section id="reasons" class="sec s6">
+      <h2 class="title rv">Why You’re So Special</h2>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <!-- 7. CAKE -->
+    <section id="cake" class="sec s7">
+      <h2 class="title rv">Make a Wish 🎂</h2>
+      <svg id="cakeSvg" viewBox="0 0 240 230" width="260" aria-label="Birthday cake">
+        <ellipse cx="120" cy="212" rx="105" ry="12" fill="#e5d4ff" />
+        <rect x="30" y="150" width="180" height="60" rx="12" fill="#ffb6d5" />
+        <rect x="55" y="100" width="130" height="52" rx="12" fill="#d9b8ff" />
+        <rect x="80" y="62" width="80" height="40" rx="10" fill="#fff0f7" />
+        <path d="M30 160q15 14 30 0t30 0 30 0 30 0 30 0 30 0" stroke="#fff" stroke-width="7" fill="none" />
+        <path d="M55 110q13 12 26 0t26 0 26 0 26 0" stroke="#fff" stroke-width="6" fill="none" />
+        <g id="candles">
+          <rect x="95" y="38" width="7" height="26" fill="#ffd36e" />
+          <rect x="117" y="38" width="7" height="26" fill="#9ad0ff" />
+          <rect x="139" y="38" width="7" height="26" fill="#ff8fb8" />
+          <ellipse class="flame" cx="98.5" cy="30" rx="5" ry="9" fill="#ffb347" />
+          <ellipse class="flame" style="animation-delay:.2s" cx="120.5" cy="30" rx="5" ry="9" fill="#ffb347" />
+          <ellipse class="flame" style="animation-delay:.4s" cx="142.5" cy="30" rx="5" ry="9" fill="#ffb347" />
+        </g>
+      </svg>
+      <button class="btn mag" id="wishBtn">Make a Wish</button>
+      <p id="wishMsg" class="hbd">May all your wishes come true, Navya! ❤️</p>
+    </section>
+
+    <!-- 8. FINAL -->
+    <section id="final" class="sec s8">
+      <div class="rv">
+        <p class="big">Miles apart, but always close at heart.</p>
+        <p>Different places, different journeys, but one friendship that distance can never change.</p>
+        <p>Here’s to another year of memories, laughter, happiness, and endless chats.</p>
+        <h2 class="hbd show">Happy Birthday, Navya! ❤️</h2>
+      </div>
+      <button class="btn mag" id="lastBtn">One Last Surprise 💗</button>
+      <p id="lastMsg" class="hbd">Always remember, no matter how far we are, you will always have a friend cheering for
+        you. Stay happy, stay blessed, and keep smiling!</p>
+      <p class="tag">“Distance doesn’t matter when a friendship is special.” ❤️</p>
+    </section>
+  </main>
+
+  <!-- Floating controls -->
+  <div id="ctrl">
+    <div id="panel">
+      <label>Music <input type="range" id="vMusic" min="0" max="1" step=".05" value=".5"></label>
+      <label>Effects <input type="range" id="vSfx" min="0" max="1" step=".05" value=".7"></label>
+    </div>
+    <button id="bMute" title="Sound on/off">🔊</button>
+    <button id="bMusic" title="Play/pause music">♫</button>
+    <button id="bVol" title="Volume">🎚</button>
+  </div>
+  <button id="toTop" title="Back to top">↑</button>
+  <div id="lb"><img alt=""></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
